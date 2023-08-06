@@ -1,23 +1,33 @@
+import { Link, NavLink } from "react-router-dom";
+
 export default function Header() {
   return (
-    <header className="p-4 bg-slate-600 text-white">
+    <header className="p-4 bg-slate-600 ">
       <div className="flex justify-between items-center">
-        <div className="font-semibold text-lg">
-          <a href="s">React App</a>
+        <div className="font-semibold text-lg text-white">
+          <Link to="/">React App</Link>
         </div>
         <div>
-          <ul className="flex">
+          <ul className="flex text-slate-400">
             <li className="px-2">
-              <a href="s">Home</a>
+              <NavLink to="/" className="transition">
+                Home
+              </NavLink>
             </li>
             <li className="px-2">
-              <a href="s">About</a>
+              <NavLink to="/about" className="transition">
+                About
+              </NavLink>
             </li>
             <li className="px-2">
-              <a href="s">Contact</a>
+              <NavLink to="/contact" className="transition">
+                Contact
+              </NavLink>
             </li>
             <li className="px-2">
-              <a href="s">Help</a>
+              <NavLink to="/help" className="transition">
+                Help
+              </NavLink>
             </li>
           </ul>
         </div>

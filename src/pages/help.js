@@ -1,13 +1,11 @@
 import Header from "../components/header";
+import Content from "../components/Content";
+
 export default function Help() {
   return (
     <div>
       <Header />
-      <div className="h-screen flex justify-center items-center">
-        <div className="text-center text-4xl font-bold">
-          <h2>Help Page</h2>
-        </div>
-      </div>
+      <Content name="Help" />
     </div>
   );
 }
